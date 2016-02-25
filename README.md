@@ -5,7 +5,7 @@
 - test2: use a shared lib
 - test3: use a well-know lib `OpenCV`
 
-## Open CV compilation
+## Open CV 3.1.0 compilation
 
 ```
 cd ~/opencv
