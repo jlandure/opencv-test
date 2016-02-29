@@ -20,3 +20,11 @@ $ make -j3
 $ make install
 ```
 
+## To compile test3 on linux
+- You might need to launch a new make AFTER the make install of OpenCV
+- Launch the following command so that ``ld`` finds the OpenCV libs:
+
+```
+$ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<OpenCV-path>/build/lib
+```
+
