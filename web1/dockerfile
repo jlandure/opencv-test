@@ -1,0 +1,14 @@
+FROM nexoft/nxweb
+
+RUN apt-get update
+RUN apt-get install libgnutls28-dev libmagickwand-dev libpython-dev make
+
+
+ADD https://bitbucket.org/yarosla/nxweb/downloads/nxweb-3.3.0-dev.tar.gz /
+RUN ldconfig
+
+WORKDIR /srv
+
+VOLUME /srv
+EXPOSE 80 443
+CMD ["nxweb", "-H", ":80"]
